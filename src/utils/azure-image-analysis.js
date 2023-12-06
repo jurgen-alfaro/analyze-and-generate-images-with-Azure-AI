@@ -1,7 +1,6 @@
 async function analyzeImage(imageUrl) {
     const apiKey = process.env.REACT_APP_AZURE_COMPUTER_VISION_KEY;
     const endpoint = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
-    const features = 'caption';
   
     const url = `${endpoint}/computervision/imageanalysis:analyze?features=read,caption&language=en&api-version=2023-02-01-preview`; 
   
